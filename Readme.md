@@ -9,7 +9,7 @@
 		- 5 step - Paspausti ant „Paskyra“;
 		- 6 step - Patikrinti ar prisijungimas sėkmingas.
 	
-2.	Kalbos pakeitimas
+2. Kalbos pakeitimas
 	- 1 Case - Patikrinti ar vartotojas sėkmingai gali pasikeisti kalbą.
 		- 1 step - Ateiti į puslapį https://sizeer.lt;
 		- 2 step - Paspausti ant rodyklės kuri išskleidžia galimas kalbas;
@@ -31,7 +31,7 @@
 		- 4 step - Pačią pirmą prekę iš sąrašo įsidėti į krepšelį spaudžiant „Į krepšelį“;
 		- 5 step - Patikrinti ar pasirinkta prekė buvo sėkmingai įdėta į krepšelį.
 		
-5.Parduotuvės paieška
+5. Parduotuvės paieška
 	- 1 Case - Patikrinti ar surandama Kauno Megos parduotuvė pagal pasirinktą miestą.
 		- 1 step - Ateiti į puslapį https://sizeer.lt;
 		- 2 step - Paspausti ant „Parduotuvės“;
