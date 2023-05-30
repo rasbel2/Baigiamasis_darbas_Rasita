@@ -6,12 +6,6 @@ namespace Tests.Sizeer
 {
     internal class AddToCartTest : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            AddToCart.Open("https://sizeer.lt/");
-        }
-
         [Test]
         public void AddCartTest()
         {
@@ -24,12 +18,6 @@ namespace Tests.Sizeer
             string firstItemName = AddToCart.GetFirstItemName();
 
             AddToCart.ClickAddToCartButton();
-            AddToCart.WaitForSideCart();
-            //AddToCart.ClickSideBarCloseButton();
-            //AddToCart.WaitCartButton();
-            //AddToCart.ClickCartButton();
-
-            //AddToCart.Navigate("https://sizeer.lt/krepselis/sarasas");
 
             string cartItemName = AddToCart.GetCartItemName();
 

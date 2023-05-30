@@ -63,6 +63,8 @@
     <Compile Include="Pages\Sizeer\AddToCart.cs" />
     <Compile Include="Pages\Sizeer\BaseSection.cs" />
     <Compile Include="Pages\Sizeer\Category.cs" />
+    <Compile Include="Pages\Sizeer\FindStore.cs" />
+    <Compile Include="Pages\Sizeer\LanguageSection.cs" />
     <Compile Include="Pages\Sizeer\Locators.cs" />
     <Compile Include="Pages\Sizeer\UserSignIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

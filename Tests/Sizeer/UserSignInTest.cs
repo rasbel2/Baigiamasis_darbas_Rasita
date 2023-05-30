@@ -7,12 +7,6 @@ namespace Tests.Sizeer
 {
     internal class UserSignInTest : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            UserSignIn.Open("https://sizeer.lt/");
-        }
-
         [Test]
         public void SignInTest()
         {

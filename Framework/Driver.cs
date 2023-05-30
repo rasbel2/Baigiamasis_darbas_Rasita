@@ -2,7 +2,6 @@
 using OpenQA.Selenium;
 using System;
 using System.IO;
-using System.Drawing;
 
 namespace Framework
 {
@@ -13,7 +12,7 @@ namespace Framework
         public static void SetupDriver()
         {
             driver = new ChromeDriver();
-            driver.Manage().Window.Size = new Size(1920, 1080);
+            driver.Manage().Window.Maximize();
         }
 
         public static IWebDriver GetDriver()

@@ -6,12 +6,6 @@ namespace Tests.Sizeer
 {
     internal class CategoriesTest : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            Category.Open("https://sizeer.lt/");
-        }
-
         [Test]
         public void CategoryTest()
         {

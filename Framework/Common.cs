@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 using System;
+using OpenQA.Selenium.Support.Extensions;
 
 namespace Framework
 {
@@ -36,16 +37,37 @@ namespace Framework
         {
             GetElement(locator).SendKeys(message);
         }
+        
+        internal static void PressEnter(string locator)
+        {
+            GetElement(locator).SendKeys(Keys.Enter);
+        }
 
         internal static string GetElementText(string locator)
         {
             return GetElement(locator).Text;
         }
 
+        internal static string GetElementAttribute(string locator, string attribute)
+        {
+            return GetElement(locator).GetAttribute(attribute);
+        }
+
         internal static void WaitForElementToBeVisible(string locator)
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
+        }
+
+        internal static void WaitForElementToBeClickable(string locator)
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(locator)));
+        }
+
+        internal static void ExecuteScript(string script)
+        {
+            Driver.GetDriver().ExecuteJavaScript(script);
         }
     }
 }

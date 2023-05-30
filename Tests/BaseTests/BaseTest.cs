@@ -8,9 +8,16 @@ namespace Tests.BaseTests
     public class BaseTest
     {
         [SetUp]
-        public void SetUp()
+        public virtual void SetUp()
         {
             Driver.SetupDriver();
+        }
+
+        [SetUp]
+        public void Open()
+        {
+            BaseSection.BaseUrl = "https://sizeer.lt/";
+            BaseSection.Open();
         }
 
         [TearDown]
@@ -30,7 +37,7 @@ namespace Tests.BaseTests
             {
                 BaseSection.ClickCookieOkButton();
             }
-            catch 
+            catch
             {
             }
         }
