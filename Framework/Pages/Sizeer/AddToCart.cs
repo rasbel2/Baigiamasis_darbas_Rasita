@@ -20,7 +20,7 @@
         public static void ClickAddToCartButton()
         {
             string link = Common.GetElementAttribute(Locators.AddToCart.addToCartButton, "href");
-            Navigate(link);
+            Common.Navigate(link);
         }
 
         public static string GetCartItemName()

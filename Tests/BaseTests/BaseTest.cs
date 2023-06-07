@@ -11,7 +11,7 @@ namespace Tests.BaseTests
         public virtual void SetUp()
         {
             Driver.SetupDriver();
-            BaseSection.Open("https://sizeer.lt/");
+            Driver.OpenUrl("https://sizeer.lt/");
             BaseSection.ClickCookieOkButton();
         }
 
