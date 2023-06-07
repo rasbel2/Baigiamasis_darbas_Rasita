@@ -11,12 +11,8 @@ namespace Tests.BaseTests
         public virtual void SetUp()
         {
             Driver.SetupDriver();
-        }
-
-        [SetUp]
-        public void Open()
-        {
             BaseSection.Open("https://sizeer.lt/");
+            BaseSection.ClickCookieOkButton();
         }
 
         [TearDown]
@@ -28,17 +24,6 @@ namespace Tests.BaseTests
                 TestContext.AddTestAttachment(fileName);
             }
             Driver.CloseDriver();
-        }
-
-        public void CheckForCookiePopUp()
-        {
-            try
-            {
-                BaseSection.ClickCookieOkButton();
-            }
-            catch
-            {
-            }
         }
     }
 }
