@@ -9,12 +9,8 @@ namespace Tests.Sizeer
         [Test]
         public void LanguageSelectTest()
         {
-            CheckForCookiePopUp();
-
             LanguageSection.ClickLanguageSelector();
             LanguageSection.ClickLanguage();
-
-            CheckForCookiePopUp();
 
             string expectedLanguage = "ANMELDUNG";
             string actualLanguage = LanguageSection.GetLanguage();

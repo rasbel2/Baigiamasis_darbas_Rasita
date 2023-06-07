@@ -9,8 +9,6 @@ namespace Tests.Sizeer
         [Test]
         public void CategoryTest()
         {
-            CheckForCookiePopUp();
-
             Category.HoverCategoryWomen();
             Category.ClickTshirtsLink();
 

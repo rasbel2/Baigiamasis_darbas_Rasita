@@ -9,8 +9,6 @@ namespace Tests.Sizeer
         [Test]
         public void AddCartTest()
         {
-            CheckForCookiePopUp();
-
             AddToCart.HoverCategoryWomen();
             AddToCart.ClickCapsLink();
             AddToCart.ClickFirstItem(); 

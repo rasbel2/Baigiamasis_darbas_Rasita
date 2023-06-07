@@ -10,8 +10,6 @@ namespace Tests.Sizeer
         [Test]
         public void SignInTest()
         {
-            CheckForCookiePopUp();
-
             UserSignIn.ClickProfileButton();
             UserSignIn.EnterEmailAddress("pecelyterasita@gmail.com");
             UserSignIn.EnterPassword("Testauskas159_");

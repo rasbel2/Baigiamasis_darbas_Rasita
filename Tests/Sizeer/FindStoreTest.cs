@@ -9,8 +9,6 @@ namespace Tests.Sizeer
         [Test]
         public void StoreFindTest()
         {
-            CheckForCookiePopUp();
-
             FindStore.ClickStoreButton();
             FindStore.EnterStoreCity("Kaunas");
 
