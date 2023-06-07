@@ -9,12 +9,9 @@ namespace Tests.Sizeer
         [Test]
         public void CategoryTest()
         {
-            CheckForCookiePopUp();
-
-            Category.HoverCategoryWomen();
-            Category.ClickTshirtsLink();
-
             string expectedHideFiltersButton = "SLĖPTI FILTRUS";
+
+            Menu.ClickCategoryByName(Menu.MenuNames.Moterims, Menu.CategoryNames.Marskineliai);
             string actualHideFiltersButton = Category.GetHideDataButtonLabel();
 
             Assert.AreEqual(expectedHideFiltersButton, actualHideFiltersButton);

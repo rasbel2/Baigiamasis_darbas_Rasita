@@ -10,15 +10,15 @@ namespace Tests.Sizeer
         [Test]
         public void SignInTest()
         {
-            CheckForCookiePopUp();
+            string email = "pecelyterasita@gmail.com";
+            string password = "Testauskas159_";
+            string expectedYourDataLabel = "Jūsų duomenys";
 
             UserSignIn.ClickProfileButton();
-            UserSignIn.EnterEmailAddress("pecelyterasita@gmail.com");
-            UserSignIn.EnterPassword("Testauskas159_");
+            UserSignIn.EnterEmailAddress(email);
+            UserSignIn.EnterPassword(password);
             UserSignIn.ClickSubmitInButton();
             UserSignIn.ClickProfileButton();
-
-            string expectedYourDataLabel = "Jūsų duomenys";
             string actualYourDataLabel = UserSignIn.GetYourDataMessage();
 
             Assert.AreEqual(expectedYourDataLabel, actualYourDataLabel);

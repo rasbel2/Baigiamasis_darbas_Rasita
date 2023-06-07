@@ -1,6 +1,6 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class FindStore : BaseSection
+    public class FindStore
     {
         public static void ClickStoreButton()
         {

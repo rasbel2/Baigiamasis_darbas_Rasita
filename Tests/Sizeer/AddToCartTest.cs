@@ -9,16 +9,10 @@ namespace Tests.Sizeer
         [Test]
         public void AddCartTest()
         {
-            CheckForCookiePopUp();
-
-            AddToCart.HoverCategoryWomen();
-            AddToCart.ClickCapsLink();
+            Menu.ClickCategoryByName(Menu.MenuNames.Moterims, Menu.CategoryNames.Kepures);
             AddToCart.ClickFirstItem(); 
-
             string firstItemName = AddToCart.GetFirstItemName();
-
             AddToCart.ClickAddToCartButton();
-
             string cartItemName = AddToCart.GetCartItemName();
 
             Assert.AreEqual(firstItemName, cartItemName);

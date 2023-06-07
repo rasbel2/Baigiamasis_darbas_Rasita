@@ -1,16 +1,10 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class Category : BaseSection
+    public class Category
     {
-        public static void ClickTshirtsLink()
-        {
-            Common.ClickElement(Locators.Category.categoryTshirts);
-        }
-
         public static string GetHideDataButtonLabel()
         {
-            return Common.GetElementText(Locators.Category.hideFiltersButton);
+            return Common.GetElementText(Locators.Menu.hideFiltersButton);
         }
-
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class LanguageSection : BaseSection
+    public class LanguageSection
     {
         public static void ClickLanguage()
         {
