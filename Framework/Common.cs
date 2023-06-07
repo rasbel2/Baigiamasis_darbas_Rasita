@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 using System;
 using OpenQA.Selenium.Support.Extensions;
+using System.ComponentModel;
 
 namespace Framework
 {
@@ -69,5 +70,14 @@ namespace Framework
         {
             Driver.GetDriver().ExecuteJavaScript(script);
         }
+        // found here: https://stackoverflow.com/a/630900
+        internal static string GetEnumDescriptionValue<T>(T enumValue)
+        {
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])enumValue
+                .GetType()
+                .GetField(enumValue.ToString())
+                .GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes[0].Description : string.Empty;
+        } 
     }
 }

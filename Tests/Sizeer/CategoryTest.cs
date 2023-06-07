@@ -9,7 +9,7 @@ namespace Tests.Sizeer
         [Test]
         public void CategoryTest()
         {
-            Home.Menu.ClickCategoryByName("Moterims", "Marškinėliai");
+            Menu.ClickCategoryByName(Menu.MenuNames.Moterims, Menu.CategoryNames.Marskineliai);
 
             string expectedHideFiltersButton = "SLĖPTI FILTRUS";
             string actualHideFiltersButton = Category.GetHideDataButtonLabel();
