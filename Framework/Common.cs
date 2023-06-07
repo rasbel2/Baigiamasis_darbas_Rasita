@@ -70,6 +70,7 @@ namespace Framework
         {
             Driver.GetDriver().ExecuteJavaScript(script);
         }
+
         // found here: https://stackoverflow.com/a/630900
         internal static string GetEnumDescriptionValue<T>(T enumValue)
         {
