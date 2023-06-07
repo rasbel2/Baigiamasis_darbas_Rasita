@@ -9,7 +9,7 @@ namespace Tests.Sizeer
         [Test]
         public void CategoryTest()
         {
-            Category.HoverCategoryWomen();
+            Home.Menu.HoverCategoryWomen();
             Category.ClickTshirtsLink();
 
             string expectedHideFiltersButton = "SLĖPTI FILTRUS";

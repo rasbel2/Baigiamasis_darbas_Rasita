@@ -1,7 +1,7 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class UserSignIn : BaseSection
-    {
+    public class UserSignIn
+    { 
         public static void ClickProfileButton()
         {
             Common.ClickElement(Locators.UserSignIn.profileInButton);

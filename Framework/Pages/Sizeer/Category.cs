@@ -1,9 +1,10 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class Category : BaseSection
+    public class Category
     {
         public static void ClickTshirtsLink()
         {
+            Common.WaitForElementToBeClickable(Locators.Category.categoryTshirts);
             Common.ClickElement(Locators.Category.categoryTshirts);
         }
 

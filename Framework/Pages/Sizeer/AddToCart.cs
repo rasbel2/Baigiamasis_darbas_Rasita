@@ -1,6 +1,6 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class AddToCart : BaseSection
+    public class AddToCart
     {
         public static void ClickCapsLink()
         {

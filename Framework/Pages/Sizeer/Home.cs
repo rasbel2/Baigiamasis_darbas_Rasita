@@ -1,6 +1,6 @@
 ﻿namespace Framework.Pages.Sizeer
 {
-    public class BaseSection
+    public class Home
     {
         public static void ClickCookieOkButton()
         {
@@ -8,9 +8,12 @@
             Common.ClickElement(Locators.CookiePopUp.buttonOk);
         }
 
-        public static void HoverCategoryWomen()
+        public class Menu
         {
-            Common.HoverElement(Locators.Category.categoryWomen);
+            public static void HoverCategoryWomen()
+            {
+                Common.HoverElement(Locators.Category.categoryWomen);
+            }
         }
     }
 }

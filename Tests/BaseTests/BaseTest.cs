@@ -12,7 +12,7 @@ namespace Tests.BaseTests
         {
             Driver.SetupDriver();
             Driver.OpenUrl("https://sizeer.lt/");
-            BaseSection.ClickCookieOkButton();
+            Home.ClickCookieOkButton();
         }
 
         [TearDown]
