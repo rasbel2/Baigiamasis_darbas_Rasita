@@ -17,17 +17,23 @@
             internal static string yourDataMassage = "//*[@class='s-subheadlineMedium g-pb10']";
         }
 
-        internal class Category
+        internal class Menu
         {
-            internal static string categoryTshirts = "//*[@class='m-menu_subItem js-menu_subItemData']/a[@href='/moterims/apranga/marskineliai']";
             internal static string hideFiltersButton = "//*[@class='m-toolbar js-listingForm']/a[@data-hide='Slėpti filtrus']";
-            internal static string categoryWomen = "//*[@class='m-menu_item js-menu_item js-menu_itemData' and @data-name='Moterims']";
 
+            internal static string CategoryByName(string menuName, string categoryName)
+            {
+                return $"//*[contains(@class,'m-menu_subItem') and @data-id='{menuName}' and @data-name='{categoryName}']/a";
+            }
+
+            internal static string MenuByName(string name)
+            {
+                return $"//*[contains(@class,'m-menu_item') and @data-name='{name}']";
+            }
         }
 
         internal class AddToCart
         {
-            internal static string categoryCaps = "//*[@class='m-menu_subItem js-menu_subItemData']/a[@href='/moterims/aksesuarai/kepures']";
             internal static string firstItem = "//*[@id='js-offerList']/div/div/div/a";
             internal static string addToCartButton = "//a[@class='m-btn m-btn_primary js-pre-add-cart']";
             internal static string itemName = "//h1[@class='m-productDescr_headline js-offerTooltip_call']";

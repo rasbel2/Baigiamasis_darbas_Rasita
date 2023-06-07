@@ -2,11 +2,6 @@
 {
     public class AddToCart
     {
-        public static void ClickCapsLink()
-        {
-            Common.ClickElement(Locators.AddToCart.categoryCaps);
-        }
-
         public static void ClickFirstItem()
         {
             Common.ClickElement(Locators.AddToCart.firstItem);

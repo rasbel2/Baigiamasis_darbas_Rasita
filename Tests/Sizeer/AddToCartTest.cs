@@ -9,8 +9,7 @@ namespace Tests.Sizeer
         [Test]
         public void AddCartTest()
         {
-            Home.Menu.HoverCategoryWomen();
-            AddToCart.ClickCapsLink();
+            Home.Menu.ClickCategoryByName("Moterims", "Kepurės");
             AddToCart.ClickFirstItem(); 
 
             string firstItemName = AddToCart.GetFirstItemName();
