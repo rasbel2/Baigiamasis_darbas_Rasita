@@ -9,10 +9,10 @@ namespace Tests.Sizeer
         [Test]
         public void LanguageSelectTest()
         {
+            string expectedLanguage = "ANMELDUNG";
+
             LanguageSection.ClickLanguageSelector();
             LanguageSection.ClickLanguage();
-
-            string expectedLanguage = "ANMELDUNG";
             string actualLanguage = LanguageSection.GetLanguage();
 
             Assert.AreEqual(expectedLanguage, actualLanguage);

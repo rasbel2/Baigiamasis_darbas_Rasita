@@ -11,11 +11,8 @@ namespace Tests.Sizeer
         {
             Menu.ClickCategoryByName(Menu.MenuNames.Moterims, Menu.CategoryNames.Kepures);
             AddToCart.ClickFirstItem(); 
-
             string firstItemName = AddToCart.GetFirstItemName();
-
             AddToCart.ClickAddToCartButton();
-
             string cartItemName = AddToCart.GetCartItemName();
 
             Assert.AreEqual(firstItemName, cartItemName);

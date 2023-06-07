@@ -9,10 +9,11 @@ namespace Tests.Sizeer
         [Test]
         public void StoreFindTest()
         {
-            FindStore.ClickStoreButton();
-            FindStore.EnterStoreCity("Kaunas");
-
+            string city = "Kaunas";
             string expectedCityLabel = "KAUNO MEGA SIZEER";
+
+            FindStore.ClickStoreButton();
+            FindStore.EnterStoreCity(city);
             string actualCityLabel = FindStore.GetStoreName();
 
             Assert.AreEqual(expectedCityLabel, actualCityLabel);
