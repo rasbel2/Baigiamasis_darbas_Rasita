@@ -2,17 +2,15 @@
 {
     public class BaseSection
     {
-        public static string BaseUrl { get; set; }
-
         public static void ClickCookieOkButton()
         {
             Common.WaitForElementToBeVisible(Locators.CookiePopUp.cookiePopUp);
             Common.ClickElement(Locators.CookiePopUp.buttonOk);
         }
 
-        public static void Open()
+        public static void Open(string url)
         {
-            Driver.OpenUrl(BaseUrl);
+            Driver.OpenUrl(url);
         }
 
         public static void Navigate(string url)

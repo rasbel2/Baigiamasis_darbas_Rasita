@@ -16,8 +16,7 @@ namespace Tests.BaseTests
         [SetUp]
         public void Open()
         {
-            BaseSection.BaseUrl = "https://sizeer.lt/";
-            BaseSection.Open();
+            BaseSection.Open("https://sizeer.lt/");
         }
 
         [TearDown]
